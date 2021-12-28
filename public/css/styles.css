@@ -5,6 +5,10 @@
   --venus-color: #eda249;
   --earth-color: #6f2ed6;
   --mars-color: #d14c32;
+  --jupiter-color: #d83a34;
+  --saturn-color: #cd5120;
+  --uranus-color: #1ec2a4;
+  --neptune-color: #2d68f0;
 }
 * {
   margin: 0;
@@ -15,7 +19,7 @@
 body {
   background-color: #070724;
   color: #ffff;
-  background-image: url("/public/assets/background-stars.png");
+  background-image: url("public/assets/background-stars.png");
 }
 h1 {
   font-family: "Roboto", sans-serif;
@@ -353,9 +357,17 @@ img.surface-location {
   .tab.active.mercury {
     background-color: var(--mercury-color);
   }
-
   .tab.active.mars {
-    background-color: #d14c32;
+    background-color: var(--mars-color);
+  }
+  .tab.active.saturn {
+    background-color: var(--saturn-color);
+  }
+  .tab.active.uranus {
+    background-color: var(--uranus-color);
+  }
+  .tab.active.neptune {
+    background-color: var(--neptune-color);
   }
 }
 
@@ -410,6 +422,10 @@ img.surface-location {
     margin-left: 32rem;
     margin-top: 3rem;
     padding: 10px;
+  }
+  .surface-location {
+    top: 300px;
+    left: 630px;
   }
 }
 /******** Width = to or smaller than 350px *********/
