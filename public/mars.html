@@ -3,61 +3,236 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Unicons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Roboto:wght@100;300;500&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/planet-mars.svg">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
-  <title>Frontend Mentor | Planets fact site</title>
+  <title>Planets fact site | Mars</title>
 </head>
 <body>
-  Mars
+  <div class="wrapper">
+    <div class="nav">
+      <div class="title">
+        <h1>THE PLANETS</h1>
+      </div>
+      <button class="menu-icon" id="menu-icon">
+        <i class="uil uil-bars "></i>
+      </button>
+        <ul class="nav-ul" id="nav-ul">
+          <hr class="top-hr">
+          <div class="menu-item first-item">
+            <img src="assets/planet-mercury.svg" alt="">
+            <li><a href="index.html">MERCURY</a></li>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <img src="assets/planet-venus.svg" alt="">
+            <li><a href="venus.html">VENUS</a></li>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <img src="assets/planet-earth.svg" alt="">
+            <li><a href="earth.html">EARTH</a></li>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <img src="assets/planet-mars.svg" alt="">
+            <li><a href="mars.html">MARS</a></li>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <img src="assets/planet-jupiter.svg" alt="">
+            <li><a href="jupiter.html">JUPITER</a></li>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <img src="assets/planet-saturn.svg" alt="">
+            <li><a href="saturn.html">SATURN</a></li>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <img src="assets/planet-uranus.svg" alt="">
+            <li><a href="uranus.html">URANUS</a></li>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <img src="assets/planet-neptune.svg" alt="">
+            <li><a href="neptune.html">NEPTUNE</a></li>
+          </div>
+          <hr>
+      </ul>
+    </div>
+    <!-- tablet NAV -->
+    <div class="tab-nav">
+      <ul>
+        <li><a href="index.html">MERCURY</a></li>
+        <li><a href="venus.html">VENUS</a></li>
+        <li><a href="earth.html">EARTH</a></li>
+        <li><a href="mars.html">MARS</a></li>
+        <li><a href="jupiter.html">JUPITER</a></li>
+        <li><a href="saturn.html">SATURN</a></li>
+        <li><a href="uranus.html">URANUS</a></li>
+        <li><a href="neptune.html">NEPTUNE</a></li>
+      </ul>
+    </div>
+    <hr>
+    <ul class="info-bar">
+      <li data-tab-target="#overview"><h4>OVERVIEW</h4></li>
+      <li data-tab-target="#structure"><h4>STRUCTURE</h4></li>
+      <li data-tab-target="#surface"><h4>SURFACE</h4></li>
+    </ul>
+    <hr class="hr-hidden">
+    <div class="tab-content">
+      <div id="overview" data-tab-content class="active">
+        <div class="img-wrapper">
+          <img src="assets/planet-mars.svg" alt="">
+        </div>
+        <div class="planet-info">
+          <div class="planet-text">
+            <h1 class="earth-name">Mars</h1>
+            <div class="tab-p">
+              <p>Third planet from the Sun and the only known planet to harbor life. 
+                About 29.2% of Earth's surface is land with remaining 70.8% is 
+                covered with water. Earth's distance from the Sun, physical properties 
+                and geological history have allowed life to evolve and thrive.
+              </p>
+            </div>
+            <p style="margin-left: 1rem; color: #838391;">Source : <a style="color: #838391; text-decoration: underline;" href="https://en.wikipedia.org/wiki/Earth"> Wikipedia</a></p>
+          </div>
+          <ul class="info-bar-tab">
+            <li data-tab-target="#overview" class=" active tab earth"><h4> <span>01 </span> OVERVIEW</h4></li>
+            <li data-tab-target="#structure" class="tab earth"><h4><span>02 </span> INTERNAL STRUCTURE</h4></li>
+            <li data-tab-target="#surface" class="tab earth"><h4><span>03 </span> SURFACE</h4></li>
+          </ul>
+        </div>
 
-  <!-- Overview Content Start -->
+      </div>
+      <div id="structure" data-tab-content class="">
+        <div class="img-wrapper">
+          <img src="assets/planet-earth-internal.svg" alt="">
+        </div>
+        <div class="planet-info">
+          <div class="planet-text">
+            <h1 class="earth-name">EARTH</h1>
+            <div class="tab-p">
+              <p>Earth's interior, like that of the other terrestrial planets, is divided 
+                into layers by their chemical or physical (rheological) properties. The 
+                outer layer is a chemically distinct silicate solid crust, which is 
+                underlain by a highly viscous solid mantle.
+              </p>
+            </div>
+            <p style="margin-left: 1rem; color: #838391;">Source : <a style="color: #838391; text-decoration: underline;" href="https://en.wikipedia.org/wiki/Earth#Internal_structure"> Wikipedia</a></p>
+          </div>
+          <ul class="info-bar-tab">
+            <li data-tab-target="#overview" class="tab earth"><h4> <span>01 </span> OVERVIEW</h4></li>
+            <li data-tab-target="#structure" class=" active tab earth"><h4><span>02 </span> INTERNAL STRUCTURE</h4></li>
+            <li data-tab-target="#surface" class="tab earth"><h4><span>03 </span> SURFACE</h4></li>
+          </ul>
+        </div>
+      </div>
+      <div id="surface" data-tab-content>
+        <div class="img-wrapper">
+          <img src="assets/planet-earth.svg" alt="" class="earth">
+          <img src="assets/geology-earth.png" alt="earth geology" class="surface-location">
+        </div>
+        <div class="planet-info">
+          <div class="planet-text">
+            <h1 class="earth-name">EARTH</h1>
+            <div class="tab-p">
+              <p>The total surface area of Earth is about 510 million km2. The continental 
+                crust consists of lower density material such as the igneous rocks granite 
+                and andesite. Less common is basalt, a denser volcanic rock that is the 
+                primary constituent of the ocean floors.
+              </p>
+            </div>
+            <p style="margin-left: 1rem; color: #838391;">Source : <a style="color: #838391; text-decoration: underline;" href="https://en.wikipedia.org/wiki/Earth#Surface"> Wikipedia</a></p>
+          </div>
+          <ul class="info-bar-tab">
+            <li data-tab-target="#overview" class="  tab earth"><h4> <span>01 </span> OVERVIEW</h4></li>
+            <li data-tab-target="#structure" class="tab earth"><h4><span>02 </span> INTERNAL STRUCTURE</h4></li>
+            <li data-tab-target="#surface" class=" active tab earth"><h4><span>03 </span> SURFACE</h4></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="facts">
+      <div class="fact-tab">
+        <p>ROTATION TIME</p>
+        <h1>0.99 DAYS</h1>
+      </div>
+      <div class="fact-tab">
+        <p>REVOLUTION TIME </p>
+        <h1>365.26 DAYS</h1>
+      </div>
+      <div class="fact-tab">
+        <p>RADIUS</p>
+        <h1>3958.756 MILES</h1>
+      </div>
+      <div class="fact-tab">
+        <p>AVERAGE TEMP.</p>
+        <h1>60.8°F </h1>
+      </div>
+    </div>
 
-  Mars is the fourth planet from the Sun and the second-smallest planet 
-  in the Solar System, being larger than only Mercury. In English, Mars 
-  carries the name of the Roman god of war and is often referred to as 
-  the "Red Planet".
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars -->
-
-  <!-- Overview Content End -->
-
-  <!-- Internal Structure Content Start -->
-
-  Like Earth, Mars has differentiated into a dense metallic core overlaid 
-  by less dense materials. Scientists initially determined that the core 
-  is at least partially liquid. Current models of its interior imply a 
-  core consisting primarily of iron and nickel with about 16–17% sulfur.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  Mars is a terrestrial planet whose surface consists of minerals containing 
-  silicon and oxygen, metals, and other elements that typically make up rock. 
-  The surface is primarily composed of tholeiitic basalt, although parts are 
-  more silica-rich than typical basalt.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars#Surface_geology -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  1.03 Days
-
-  Revolution Time
-  1.88 Years
-
-  Radius
-  3,389.5 KM
-
-  Average Temp.
-  -28°c
+  </div>
+<script src="js/script.js"></script>
 </body>
 </html>
+
+<!-- Mars
+
+Overview Content Start
+
+Mars is the fourth planet from the Sun and the second-smallest planet 
+in the Solar System, being larger than only Mercury. In English, Mars 
+carries the name of the Roman god of war and is often referred to as 
+the "Red Planet".
+
+Source : Wikipedia URL: https://en.wikipedia.org/wiki/Mars
+
+Overview Content End
+
+Internal Structure Content Start
+
+Like Earth, Mars has differentiated into a dense metallic core overlaid 
+by less dense materials. Scientists initially determined that the core 
+is at least partially liquid. Current models of its interior imply a 
+core consisting primarily of iron and nickel with about 16–17% sulfur.
+
+Source : Wikipedia URL: https://en.wikipedia.org/wiki/Mars#Internal_structure 
+
+Internal Structure Content End
+
+Surface Geology Content Start 
+
+Mars is a terrestrial planet whose surface consists of minerals containing 
+silicon and oxygen, metals, and other elements that typically make up rock. 
+The surface is primarily composed of tholeiitic basalt, although parts are 
+more silica-rich than typical basalt.
+
+Source : Wikipedia URL: https://en.wikipedia.org/wiki/Mars#Surface_geology -->
+
+<!-- Surface Geology Content End -->
+
+<!-- 01 Overview
+02 Internal Structure
+03 Surface Geology
+
+Rotation Time
+1.03 Days
+
+Revolution Time
+1.88 Years
+
+Radius
+3,389.5 KM -->
+
+<!-- Average Temp. -->
+<!-- -28°c -->
