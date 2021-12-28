@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Roboto:wght@100;300;500&family=Spartan:wght@400;700&display=swap");
-
+:root {
+  /* colors */
+  --mercury-color: #419ebb;
+  --venus-color: #eda249;
+  --earth-color: #6f2ed6;
+  --mars-color: #d14c32;
+}
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +28,7 @@ h4 {
   font-family: "Spartan", sans-serif;
   font-weight: 400;
   letter-spacing: 2px;
-  font-size: 11px;
+  font-size: 9px;
 }
 
 p {
@@ -312,6 +318,9 @@ img.surface-location {
     width: 250px;
     margin-bottom: 1rem;
   }
+  .info-bar-tab li:hover {
+    cursor: pointer;
+  }
 
   span {
     color: #6f6f79;
@@ -336,7 +345,17 @@ img.surface-location {
   }
 
   .tab.active.earth {
-    background-color: #6f2ed6;
+    background-color: var(--earth-color);
+  }
+  .tab.active.venus {
+    background-color: var(--venus-color);
+  }
+  .tab.active.mercury {
+    background-color: var(--mercury-color);
+  }
+
+  .tab.active.mars {
+    background-color: #d14c32;
   }
 }
 
@@ -353,22 +372,27 @@ img.surface-location {
   }
 
   img.earth {
-    width: 250px;
+    width: 350px;
   }
   img.surface-location {
-    width: 80px;
+    width: 130px;
   }
   #overview img {
     width: 350px;
   }
   #structure img {
-    width: 250px;
+    width: 350px;
   }
 
   .img-wrapper {
     margin-left: 20rem;
     margin-top: 3rem;
     padding: 10px;
+  }
+
+  .surface-location {
+    top: 300px;
+    left: 440px;
   }
 
   p {
@@ -427,7 +451,7 @@ img.surface-location {
   #overview h1,
   #structure h1,
   #surface h1 {
-    margin-left: 7rem;
+    margin-left: 6rem;
   }
 
   .surface-location {
