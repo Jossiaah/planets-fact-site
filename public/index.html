@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Unicons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Roboto:wght@100;300;500&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png"> -->
+  
+  <title>Planets fact site</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="nav">
+      <div class="title">
+        <h1>THE PLANETS</h1>
+      </div>
+      <button class="menu-icon" id="menu-icon">
+        <i class="uil uil-bars "></i>
+      </button>
+        <ul class="nav-ul" id="nav-ul">
+          <hr class="top-hr">
+          <div class="menu-item first-item">
+            <img src="assets/planet-mercury.svg" alt="">
+            <li><a href="index.html">MERCURY</a></li>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <img src="assets/planet-venus.svg" alt="">
+            <li><a href="venus.html">VENUS</a></li>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <img src="assets/planet-earth.svg" alt="">
+            <li><a href="earth.html">EARTH</a></li>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <img src="assets/planet-mars.svg" alt="">
+            <li><a href="mars.html">MARS</a></li>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <img src="assets/planet-jupiter.svg" alt="">
+            <li><a href="jupiter.html">JUPITER</a></li>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <img src="assets/planet-saturn.svg" alt="">
+            <li><a href="saturn.html">SATURN</a></li>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <img src="assets/planet-uranus.svg" alt="">
+            <li><a href="uranus.html">URANUS</a></li>
+          </div>
+          <hr>
+          <div class="menu-item">
+            <img src="assets/planet-neptune.svg" alt="">
+            <li><a href="neptune.html">NEPTUNE</a></li>
+          </div>
+          <hr>
+      </ul>
+    </div>
+    <!-- tablet NAV -->
+    <div class="tab-nav">
+      <ul>
+        <li><a href="index.html">MERCURY</a></li>
+        <li><a href="venus.html">VENUS</a></li>
+        <li><a href="earth.html">EARTH</a></li>
+        <li><a href="mars.html">MARS</a></li>
+        <li><a href="jupiter.html">JUPITER</a></li>
+        <li><a href="saturn.html">SATURN</a></li>
+        <li><a href="uranus.html">URANUS</a></li>
+        <li><a href="neptune.html">NEPTUNE</a></li>
+      </ul>
+    </div>
+    <hr>
+    <ul class="info-bar">
+      <li data-tab-target="#overview"><h4>OVERVIEW</h4></li>
+      <li data-tab-target="#structure"><h4>STRUCTURE</h4></li>
+      <li data-tab-target="#surface"><h4>SURFACE</h4></li>
+    </ul>
+    <hr class="hr-hidden">
+    <div class="tab-content">
+      <div id="overview" data-tab-content class="active">
+        <div class="img-wrapper">
+          <img src="assets/planet-mercury.svg" alt="">
+        </div>
+        <div class="planet-info">
+          <div class="planet-text">
+            <h1>MERCURY</h1>
+            <div class="tab-p">
+              <p>Mercury is the smallest planet in the Solar System and the closest 
+                to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
+                shortest of all the Sun's planets. Mercury is one of four terrestrial 
+                planets in the Solar System, and is a rocky body like Earth.
+              </p>
+            </div>
+            <p style="margin-left: 1rem; color: #838391;">Source : <a style="color: #838391; text-decoration: underline;" href="https://en.wikipedia.org/wiki/Mercury_(planet)"> Wikipedia</a></p>
+          </div>
+          <ul class="info-bar-tab">
+            <li data-tab-target="#overview" class=" active tab earth"><h4> <span>01 </span> OVERVIEW</h4></li>
+            <li data-tab-target="#structure" class="tab earth"><h4><span>02 </span> INTERNAL STRUCTURE</h4></li>
+            <li data-tab-target="#surface" class="tab earth"><h4><span>03 </span> SURFACE</h4></li>
+          </ul>
+        </div>
+
+      </div>
+      <div id="structure" data-tab-content class="">
+        <div class="img-wrapper">
+          <img src="assets/planet-mercury-internal.svg" alt="">
+        </div>
+        <div class="planet-info">
+          <div class="planet-text">
+            <h1>MERCURY</h1>
+            <div class="tab-p">
+              <p>Mercury appears to have a solid silicate crust and mantle overlying a 
+                solid, iron sulfide outer core layer, a deeper liquid core layer, and 
+                a solid inner core. The planet's density is the second highest in the 
+                Solar System at 5.427 g/cm3 , only slightly less than Earth's density.
+              </p>
+            </div>
+            <p style="margin-left: 1rem; color: #838391;">Source : <a style="color: #838391; text-decoration: underline;" href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure"> Wikipedia</a></p>
+          </div>
+          <ul class="info-bar-tab">
+            <li data-tab-target="#overview" class="tab earth"><h4> <span>01 </span> OVERVIEW</h4></li>
+            <li data-tab-target="#structure" class="tab earth"><h4><span>02 </span> INTERNAL STRUCTURE</h4></li>
+            <li data-tab-target="#surface" class="tab earth"><h4><span>03 </span> SURFACE</h4></li>
+          </ul>
+        </div>
+      </div>
+      <div id="surface" data-tab-content>
+        <div class="img-wrapper">
+          <img src="assets/planet-mercury.svg" alt="" class="earth">
+          <img src="assets/geology-mercury.png" alt="earth geology" class="surface-location">
+        </div>
+        <h1>MERCURY</h1>
+        <div class="tab-p">
+          <p>Mercury's surface is similar in appearance to that of the Moon, showing 
+            extensive mare-like plains and heavy cratering, indicating that it has 
+            been geologically inactive for billions of years. It is more heterogeneous 
+            than either Mars's or the Moon’s.
+          </p>
+        </div>
+        <p style="margin-left: 1rem; color: #838391;">Source : <a style="color: #838391; text-decoration: underline;" href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology"> Wikipedia</a></p>
+
+      </div>
+    </div>
+    <div class="facts">
+      <div class="fact-tab">
+        <p>ROTATION TIME</p>
+        <h1>58.6 DAYS</h1>
+      </div>
+      <div class="fact-tab">
+        <p>REVOLUTION TIME </p>
+        <h1>87.97 DAYS</h1>
+      </div>
+      <div class="fact-tab">
+        <p>RADIUS</p>
+        <h1>1515.959  MILES</h1>
+      </div>
+      <div class="fact-tab">
+        <p>AVERAGE TEMP.</p>
+        <h1>806°F </h1>
+      </div>
+    </div>
+
+  </div>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+<!-- Mercury
+
+  Overview Content Start
+
+  Mercury is the smallest planet in the Solar System and the closest 
+  to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
+  shortest of all the Sun's planets. Mercury is one of four terrestrial 
+  planets in the Solar System, and is a rocky body like Earth.
+
+  Source : Wikipedia URL: https://en.wikipedia.org/wiki/Mercury_(planet) -->
+
+  <!-- Overview Content End -->
+
+  <!-- Internal Structure Content Start -->
+
+  <!-- Mercury appears to have a solid silicate crust and mantle overlying a 
+  solid, iron sulfide outer core layer, a deeper liquid core layer, and 
+  a solid inner core. The planet's density is the second highest in the 
+  Solar System at 5.427 g/cm3 , only slightly less than Earth's density.
+
+  Source : Wikipedia URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure -->
+
+  <!-- Internal Structure Content End -->
+
+  <!-- Surface Geology Content Start -->
+
+  <!-- Mercury's surface is similar in appearance to that of the Moon, showing 
+  extensive mare-like plains and heavy cratering, indicating that it has 
+  been geologically inactive for billions of years. It is more heterogeneous 
+  than either Mars's or the Moon’s.
+
+  Source : Wikipedia URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology -->
+
+  <!-- Surface Geology Content End -->
+
+  <!-- 01 Overview
+  02 Internal Structure
+  03 Surface Geology
+
+  Rotation Time
+  58.6 Days
+
+  Revolution Time
+  87.97 Days
+
+  Radius
+  2,439.7 KM
+
+  Average Temp.
+  430°c -->
