@@ -19,7 +19,7 @@
 body {
   background-color: #070724;
   color: #ffff;
-  background-image: url("public/assets/background-stars.png");
+  background-image: url("/assets/background-stars.png");
 }
 h1 {
   font-family: "Roboto", sans-serif;
@@ -365,6 +365,9 @@ img.surface-location {
   }
   .tab.active.uranus {
     background-color: var(--uranus-color);
+  }
+  .tab.active.jupiter {
+    background-color: var(--jupiter-color);
   }
   .tab.active.neptune {
     background-color: var(--neptune-color);
